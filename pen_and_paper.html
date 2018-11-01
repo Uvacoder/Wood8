@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pen & Paper</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/responsive_image_grid.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <script type="text/javascript" src="js/lightbox.js"></script>
+</head>
+<body class="container">
+<header><a href="index.html">[Peter McClean Ryan]</a><p>Pen & Paper</p></header>
+<main>
+    <div class="row">
+        <div class="column">
+            <img src="img/pen_and_paper/azimuthal_two.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+        </div>
+        <div class="column">
+            <img src="img/pen_and_paper/hand_and_swan.JPG" onclick="openModal();currentSlide(2)" class="hover-shadow">
+        </div>
+        <div class="column">
+            <img src="img/pen_and_paper/right_angle.JPG" onclick="openModal();currentSlide(3)" class="hover-shadow">
+        </div>
+        <div class="column">
+            <img src="img/pen_and_paper/roof_vines.JPG" onclick="openModal();currentSlide(4)" class="hover-shadow">
+        </div>
+        <div class="column">
+            <img src="img/pen_and_paper/snail_thing.JPG" onclick="openModal();currentSlide(5)" class="hover-shadow">
+        </div>
+        <div class="column">
+            <img src="img/pen_and_paper/allston_painting.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+        </div>
+        <div class="column">
+            <img src="img/pen_and_paper/azimuthal_one.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow">
+        </div>
+        <div class="column">
+            <img src="img/pen_and_paper/lemont.JPG" onclick="openModal();currentSlide(8)" class="hover-shadow">
+        </div>
+        <div class="column">
+            <img src="img/pen_and_paper/riegelsville.JPG" onclick="openModal();currentSlide(9)" class="hover-shadow">
+        </div>
+        <div class="column">
+            <img src="img/pen_and_paper/newtown.JPG" onclick="openModal();currentSlide(10)" class="hover-shadow">
+        </div>
+        <div class="column">
+            <img src="img/pen_and_paper/eye_snake.jpg" onclick="openModal();currentSlide(11)" class="hover-shadow">
+        </div>
+        <div class="column">
+            <img src="img/pen_and_paper/library_of_babel_pr.jpg" onclick="openModal();currentSlide(12)" class="hover-shadow">
+        </div>
+        <div class="column">
+            <img src="img/pen_and_paper/liberalism_and_conservatism.JPG" onclick="openModal();currentSlide(13)" class="hover-shadow">
+        </div>
+        <div class="column">
+            <img src="img/pen_and_paper/penandpaper.jpg" onclick="openModal();currentSlide(14)" class="hover-shadow">
+        </div>
+    </div>
+
+    <!-- The Modal/Lightbox -->
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+            <div class="mySlides">
+                <div class="numbertext">1 / 14</div>
+                <img src="img/pen_and_paper/azimuthal_two.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 14</div>
+                <img src="img/pen_and_paper/hand_and_swan.JPG" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 14</div>
+                <img src="img/pen_and_paper/right_angle.JPG" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 14</div>
+                <img src="img/pen_and_paper/roof_vines.JPG" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">5 / 14</div>
+                <img src="img/pen_and_paper/snail_thing.JPG" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">6 / 14</div>
+                <img src="img/pen_and_paper/allston_painting.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">7 / 14</div>
+                <img src="img/pen_and_paper/azimuthal_one.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">8 / 14</div>
+                <img src="img/pen_and_paper/lemont.JPG" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">9 / 14</div>
+                <img src="img/pen_and_paper/riegelsville.JPG" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">10 / 14</div>
+                <img src="img/pen_and_paper/newtown.JPG" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">11 / 14</div>
+                <img src="img/pen_and_paper/eye_snake.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">12 / 14</div>
+                <img src="img/pen_and_paper/library_of_babel_pr.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">13 / 14</div>
+                <img src="img/pen_and_paper/liberalism_and_conservatism.JPG" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">14 / 14</div>
+                <img src="img/pen_and_paper/penandpaper.jpg" style="width:100%">
+            </div>
+
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Caption text -->
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <!-- Thumbnail image controls -->
+            <div class="column">
+                <img class="demo" src="img/pen_and_paper/azimuthal_two.jpg" onclick="currentSlide(1)" alt="Nature">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="img/pen_and_paper/hand_and_swan.JPG" onclick="currentSlide(2)" alt="Snow">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="img/pen_and_paper/right_angle.JPG" onclick="currentSlide(3)" alt="Mountains">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="img/pen_and_paper/roof_vines.JPG" onclick="currentSlide(4)" alt="Lights">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="img/pen_and_paper/snail_thing.JPG" onclick="currentSlide(5)" alt="Lights">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="img/pen_and_paper/allston_painting.jpg" onclick="currentSlide(6)" alt="Lights">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="img/pen_and_paper/azimuthal_one.jpg" onclick="currentSlide(7)" alt="Lights">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="img/pen_and_paper/lemont.JPG" onclick="currentSlide(8)" alt="Lights">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="img/pen_and_paper/riegelsville.JPG" onclick="currentSlide(9)" alt="Lights">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="img/pen_and_paper/newtown.JPG" onclick="currentSlide(10)" alt="Lights">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="img/pen_and_paper/eye_snake.jpg" onclick="currentSlide(11)" alt="Lights">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="img/pen_and_paper/library_of_babel_pr.jpg" onclick="currentSlide(12)" alt="Lights">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="img/pen_and_paper/liberalism_and_conservatism.JPG" onclick="currentSlide(13)" alt="Lights">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="img/pen_and_paper/penandpaper.jpg" onclick="currentSlide(14)" alt="Lights">
+            </div>
+        </div>
+    </div>
+</main>
+<footer>Questions/Comments? Email me @ peterryan253@gmail.com</footer>
+</body>
+</html>

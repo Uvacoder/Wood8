@@ -1,0 +1,98 @@
+body {
+    font-family: Courier;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+@media (min-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 300px;
+        grid-template-rows: auto 1fr auto;
+    }
+}
+
+header {
+    grid-column: span 3;
+    padding: 30px;
+    text-align: center;
+    font-size: 1.4em;
+    background-color: #fff;
+}
+
+a {
+    color: inherit;
+    text-decoration: None;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+main {
+    flex: 1;
+    display: grid;
+    /*grid-gap: 1em;*/
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+}
+
+.b1 {
+    padding: 20px;
+    background-color: #E8E8E8;
+    background-image: url("../img/pen_and_paper/pen_and_paper_preview.png");
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.b2 {
+    padding: 20px;
+    background-color: #BABABA;
+    background-image: url("../img/wood/wood_preview.png");
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.b3 {
+    padding: 20px;
+    background-color: #858585;
+    color: white;
+    background-image: url("../img/sound/sound_preview.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.b4 {
+    padding: 20px;
+    background-color: #474747;
+    background-image: url("../img/computers/others/commutes_preview_white.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+
+aside {
+    padding: 20px;
+    background-color: #919191;
+    color: white;
+}
+
+footer {
+    grid-column: span 3;
+    padding: 30px;
+    text-align: left;
+    font-size: 1em;
+    background-color: #919191;
+    color: white;
+}
+
+h1 {
+    margin-bottom: 1em;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
